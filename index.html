@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="css/index.css" rel="stylesheet"/>
+        <script src="js/jquery-2.2.1.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/common.js"></script>
+        
+        
+    </head>
+    <body>
+        <div id="warnDialog">
+            <span></span><strong>请选择文件</strong>
+        </div>
+        <div id="successTip">
+            <!-- <span></span> --><strong>新建文件夹成功</strong>
+        </div>
+         <div id="DelsuccessTip">
+            <!-- <span></span> --><strong>删除文件成功</strong>
+        </div>
+        <div id="emptyTip">
+            <strong>文件名不能为空</strong>
+        </div>
+        <div id="warnTip">
+            <strong>请保存或取消刚才的操作</strong>
+        </div>
+        <div id="repeatTip">
+            <strong>文件名重复了,请重新命名</strong>
+        </div>
+
+        <section id="mask">
+            
+        </section>
+        <div id="downClient">
+            <h3 class='title clear'><span class="del">下载客户端</span><span class="close cancel">×</span></h3>
+            <div class="downCon">
+                <ul>
+                    <li class="downVersion">
+                        <div class="phoneWrap">
+                            <img src="img/newqrcode.png" />
+                            <span class="phone">下载微云手机版</span>
+                       </div>
+                    </li>
+                    <li class="downVersion">
+                        <strong class="window"></strong>
+                        <p>Windows版</p>
+                    </li>
+                    <li class="downVersion">
+                        <strong class="Mac"></strong>
+                        <p>Mac版</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section id="delWarn">
+            <h3 class='title clear'><span class="del">删除文件</span><span class="close cancel">×</span></h3>
+            <div class="fullText">
+                <span class="warnIco"></span>
+                <p>确定要删除这些文件吗?</p>
+                <h4>已删除的文件可以在回收站找到</h4>
+            </div>
+            <div class="delBtn">
+                <h5><strong class="ok">确定</strong><strong class="cancel">取消</strong></h5>
+            </div>
+        </section>
+        <header id="header">
+            <a href="#" class="logo"></a>
+            <a href="#" class="memberCenter">vip会员中心</a>
+            <a href="#" class="download"><span></span>下载客户端</a>
+            <div class="search">
+                <span></span>
+                <input type="text" placeholder="搜索全部文件"name="" value="" class="searchText">
+            </div>
+            <div class="login">
+               <div class="Portrait">
+                   <div class="headPortrait">
+                       <img src=""/>
+                       <span></span>
+                   </div>
+               </div>
+                
+            </div>
+
+        </header>
+        <div id="leftNav">
+                <div class="file">
+                    <div id="filebox"class="filebox">
+                        <a  id="filebtn"class="filebtn"href="#"><span>+</span>上传
+                        </a>
+                        <ul id="filelist"class="filelist">
+                            <li>
+                                <a href="#">文件</a>
+                            </li>
+                            <li><a href="#">文件夹</a></li>
+                            <li><a href="#">中转站</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="catalogue">
+                    <span></span>
+                    <a href="#">目录</a>
+                </div>
+                <div class="recent">
+                    
+                    <a href="#"><span class="recentIco"></span>最近</a>
+                </div>
+                <ul class="list">
+                    <li class="doc"><a href="#"><span class="docIco"></span>文档</a></li>
+                    <li class="image"><a href="#"><span class="imgIco"></span>图片</a></li>
+                    <li class="music"><a href="#"><span class="musicIco"></span>音乐</a></li>
+                    <li class="video"><a href="#"><span class="videoIco"></span>视频</a></li>
+                    <li class="txt"><a href="#"><span class="txtIco"></span>笔记</a></li>
+                </ul>
+                <div class="transfer leftsidediv">
+                    
+                    <a href="#"><span class="transferIco"></span>文件中转站<strong></strong></a>
+
+                </div>
+                <div class="ctrlBoard leftsidediv">
+                    <a href="#"><span class="ctrlBoardIco"></span>剪贴板</a>
+                </div>
+                <div class="leftsidediv link share">
+                    <a href="#"><span class="shareIco"></span>分享的链接</a>
+                </div>
+                <div class="leftsidediv link restore">
+                    <a href="#"><span class="restoreIco"></span>回收站</a>
+                </div>
+
+        </div>
+         <div id="mainContent">
+                <div class="headToolBar clear">
+                    <div class="btnFunction">
+                        <a class="downloadA"href="#"><span class="btnico"></span><em class="btntxt">下载</em></a><a class="shareA"href="#"><span class="btnico"></span><em class="btntxt">分享</em></a><a class="moveA" href="#"><span class="btnico"></span><em class="btntxt">移动到</em></a><a class="resetA"href="#"><span class="btnico"></span><em class="btntxt">重命名</em></a><a class="delA"href="#"><span class="btnico"></span><em class="btntxt">删除</em></a><a href="#" class="newA"><span class="btnico"></span><em class="btntxt">新建文件夹</em></a><a class="fresh"href="#"><span class="btnico"></span></a>
+
+                    </div>
+                    <div class="menuRank" id="menuRank">
+                        <a class="tree rankA"href="#"></a><a id="tileA"class="tile rankA"href="#"><span class="tri"></span></a>
+                        <ul id="rankList"class="rankList">
+                            <li class="time"><span></span><a href="#">按时间排序</a></li>
+                            <li class="letter"><span></span><a href="#">按字母排序</a></li>
+                            <li class="showimg"><span></span><a href="#">显示缩略图</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+        </div>
+        <div id="cataHeader">
+                    <div class="cataToolbar">
+                        <div class="wrap">
+                            <label class='labelbtn' id="labelbtn"></label>
+                            <div class="path">
+                                <p class="checked">已选中 <span>0</span> 个文件/文件夹</p>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div id="cataContent">
+            <div class="cataMain">
+               <div class="cataTree">
+                   <div class="cataLeft">
+                       <div id="fileT"class="fileTotal clear">
+                         <!--   <div class="fileItem" attr("finished",true)>
+                            <div class="filecon">
+                                <span id="span1"></span>
+                            </div>
+                            <div class="filename"style="display:none">
+                                <input type="text" value="新建文件夹"/><em class="success"></em><em class="fail"></em>
+                            </div>
+                            <div class="filename1" style="display:block">
+                                <input class="name"type="text" value="新建文件夹2"/>
+                            </div>
+                                                   </div> -->
+                          
+                       </div>
+                   </div>
+               </div>
+                
+            </div>
+            
+        </div>
+
+        
+    </body>
+</html>

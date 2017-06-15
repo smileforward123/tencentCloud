@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="css/index.css" rel="stylesheet"/>
+    </head>
+    <script src="js/jquery-2.2.1.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/isArea.js"></script>
+    <script src="js/data.js"></script>
+    <body>
+        <header id="loginHeader">
+            <div id="loginHeaderCon" class="clear">
+                <h1>
+                    <span class="logo"></span><span class="logoText"></span>
+               </h1>
+                <h2>全能收藏,无处不在</h2>
+                <ul id="headNav"class='clear'>
+                    <li><a class="home"href="javascript:;">首页</a></li>
+                    <li><a class="downNav"href="javascript:;">下载</a></li>
+                    <li><a class="functionNav"href="javascript:;">功能</a></li>
+                    <li><a class="vipNav"href="javascript:;">会员</a></li>
+                    <li><a href="javascript:;">关于我</a></li>
+                    <li id="navmove"></li>
+                </ul>
+            </div>
+        </header>
+        <div id="loginBox">
+            
+            <nav class="loginNav">
+                <div id="newBtn">
+                <a class="open"href="#"><img src="img/newsopen.png" /></a>
+                <a class="close"href="#"><img src="img/newsclose.png"/></a>
+                </div>
+                <a href="#">QQ账号登录</a><a href="#">微信账号登录</a>
+            </nav>
+            <div id="userInfo">
+                <div class="user">
+                    <div class="left">
+                        <div class="safeTip">
+                        安全登录,防止被盗
+                        </div>
+                        <div id="qrCode">
+                            <p class="codeImg">
+                                <img src="img/ptqrshow.png"/>
+                                <span class="qqIco"></span>
+                                <strong class="mask"></strong>
+                                <span class="codeTip">
+                                    二维码失效<br/>
+                                    请点击刷新
+                                </span>
+                            </p>
+                            <div class="qqScan">
+                            <a href="#">使用QQ手机版扫描二维码</a>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h4>
+                            <span class="Tips">帐号登录</span>
+                            <span class="Tips errorTip"><em class="errorIco"></em>请输入正确的QQ账号</span>
+                        </h4>
+                        <div class="userForm">
+                            <div class="Form">
+                                <p>
+                                   <span class="email"></span>
+                                   <input class="username"type="text" name="" value=""placeholder="支持QQ登录"/> 
+                                </p>
+                                <p class="userPw">
+                                   <span class="pw"></span>
+                                   <input class="Password"type="password" name="" placeholder="密码为6-16位字符组成,不包括空格"/> 
+                                </p>
+                                <div class="pwErrorTip">
+                                   <em class="errorIco"></em>请输入正确的密码 !
+                                </div>
+                                <div class="submit">
+                                    <a id="submitBtn"href="javascript:;">
+                                        <input class="loginBtn"type="button" name="" value="登录"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+        
+                </div>
+                <div id="bottom">
+                    <h5>
+                        <a href="#">忘了密码?</a>|<a href="#">注册新账号</a>|<a href="#">意见反馈</a>
+                    </h5>
+                </div>
+            </div>
+            
+        </div>
+        
+            <div id="myContent">
+          
+            <div id="listWrap"class="listWrap module" >
+                <ul id="loginList"class='loginList'>
+                    <li class="banner1">
+                        <img src="img/banner_1.png" />
+                    </li>
+                    <li>
+                        <img src="img/banner_2.png" />
+                    </li>
+                   
+                   
+                </ul>
+
+            </div>
+             <div id="downloadVersion"class="downloadWrap module">
+                <ul id="downloadList"class='downloadIco clear'>
+                    <li class="clear">
+                        <a class="Andversion version"href="#">
+                            <span></span>
+                        </a>
+                        <strong>Android版</strong>
+                    </li>
+                     <li class="clear">
+                        <a class="iphone version"href="#">
+                            <span></span>
+                        </a>
+                        <strong>IPhone版</strong>
+                    </li>
+                     <li class="clear">
+                        <a class="Ipad version"href="#">
+                            <span></span>
+                         </a>
+                        <strong>IPad版</strong>
+                    </li>
+                     <li class="clear">
+                        <a class="Window version"href="#">
+                            <span></span>
+                       </a>
+                        <strong>Windows版</strong>
+                    </li>
+                    <li class="clear MacLi">
+                        <a class="Mac version"href="#">
+                           <span></span>
+                        </a>
+                        <strong>Mac版</strong>
+                        
+                    </li>
+                </ul>
+            </div>
+             <div id="functionIntro"class="functionWrap module">
+                <div class="detail blue clear">
+                    <div id="photo"class="photo detailCon clear">
+                        <section id="albumText"class="leftTxt">
+                            <h3>相册备份</h3>
+                            <p>WiFi环境下自动备份您手机中的照片备份后其他终端随时管理自己的照片</p>
+                        </section>
+                        <section class="rightImg">
+                            <img src="img/album-backup.png" />
+                        </section>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div id="contact"class="detailCon contact clear">
+                        <section class="img">
+                            <img src="img/contact-backup.png" />
+                        </section>
+                        <section class="contactTxt">
+                            <h3>通讯录备份</h3>
+                            <p>让你的联系人永不丢失,一键备份联系人,丢手机，换号码永不发愁</p>
+                        </section>
+                    </div>
+                </div>
+                <div class="detail blue">
+                    <div id="fileManage"class="detailCon fileManage clear">
+                        <section class="fileTxt">
+                            <h3>文件管理</h3>
+                            <p>文件分门别类,支持全局搜索与批量操作独有缩略图展示模式,随心所欲的掌控自己的文件</p>
+                        </section>
+                        <section class="fileImg">
+                            <img src="img/file-manage.png" />
+                        </section>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div id="note"class="detailCon Notes clear">
+                        <section class="img">
+                            <img src="img/cloudynotes.png" />
+                        </section>
+                        <section class="Rightnote">
+                            <h3>云笔记</h3>
+                            <p>收集和整理各种会议记录,日程安排,生活备忘,保存的笔记可以多种设备跨平台阅读分享</p>
+                        </section>
+                    </div>
+                </div>
+                <div class="detail blue">
+                     <div id="Memory"class="detailCon Memory clear">
+                        <section class="MemoryTxt">
+                            <h3>剪贴板 回收站 收藏夹</h3>
+                            <p>手机复制,电脑粘贴,电脑复制,手机粘贴,您能在回收站找回过去30天您删除的文件收藏喜欢和重要的文件</p>
+                        </section>
+                        <section class="MemoryImg">
+                            <img src="img/trash.png" />
+                        </section>
+                </div>
+                </div>
+            </div>
+             <div id="vipCenter"class="vipWrap module">
+                 <div class="vipAdventage">
+                     
+                 </div>
+                 <div class="openVip">
+                     <a class="openVipBtn"href="#">马上开通会员</a>
+                 </div>
+                 <div class="focus">
+                      <span>关注微云官方认证空间</span><a class="clear" href="#"><em></em>关注</a>
+                 </div>
+            </div>
+            <div id="about">
+                <div id="aboutMe">
+                     <ul id="workList"class="workList clear">
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <footer id="footer">
+            <section id="footerCon" class="clear">
+                <a class="logo2"href="#"><img src="img/logo2.png" /></a>
+                <div class="copyRight">
+                    <p>
+                        <a href="#">QQ空间手机版</a> | <a href="#">画报</a> | <a href="#">QQ音乐</a> | <a href="#">腾讯云</a> | <a href="#">企鹅FM</a> | <a href="#">腾讯课堂</a>
+                    </p>
+                    <p><a href="#">关于腾讯</a> | <a href="#">服务条款</a> | <a href="#">客服中心</a> | <a href="#">粤B2-20090959-86号</a></p>
+                    <p>版权声明: 您应尊重相关作品著作权人合法权益,未经著作权人合法授权,不能违法上传,存储,分享他人作品 </p>
+                    <p>
+                        <a href="#"> 侵权投诉指引 </a>| 举报或投诉<a class="webSite"href="#"> notice-b2@tencent.com </a>
+                    </p>
+                    <p>
+                        Copyright © 1998 - 2016 Tencent. All Rights Reserved. 腾讯公司 版权所有
+                    </p>
+                </div>
+            </section>
+
+        </footer>
+        
+    </body>
+</html>
